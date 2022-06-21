@@ -375,6 +375,7 @@ namespace Foundation.ContentEditor.Controls
                 output.Write("</optgroup>");
             }
             output.Write("</select>");
+            if (!string.IsNullOrWhiteSpace(DataSourcePath)) output.Write("DataSource: " + DataSourcePath);
             if (!flag3)
                 return;
             output.Write("<div style=\"color:#999999;padding:2px 0px 0px 0px\">{0}</div>", (object)Translate.Text("The field contains a value that is not in the selection list."));

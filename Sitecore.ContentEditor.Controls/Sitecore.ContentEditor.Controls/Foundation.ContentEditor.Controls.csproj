@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomChecklist.cs" />
     <Compile Include="InlineDropList.cs" />
     <Compile Include="InlineItemList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -286,6 +286,12 @@ namespace Foundation.ContentEditor.Controls
 				//<Column 4>
 				//</Row>
 
+				if (!string.IsNullOrWhiteSpace(DataSourcePath))
+				{
+					LiteralControl sourceControl = new LiteralControl("DataSource: " + DataSourcePath);
+					gridPanel.Controls.Add(sourceControl);
+				}
+
 				LiteralControl bottomSpacer = new LiteralControl(Images.GetSpacer(16, 16));
 				gridPanel.Controls.Add(bottomSpacer);
 				gridPanel.SetExtensibleProperty(bottomSpacer, "ColSpan", "4");
